@@ -1,2 +1,2 @@
 # TechHubSpaces-Test
-A test to recreate MetaDapp blockchain webapp - https://metadapp.com/ 
+A test to recreate the landing page of MetaDapp blockchain webapp - https://metadapp.com/ 
