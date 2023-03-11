@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/TechHubSpaces-Test/static/css/main.88359018.css",
+    "main.js": "/TechHubSpaces-Test/static/js/main.43e529e6.js",
+    "index.html": "/TechHubSpaces-Test/index.html",
+    "main.88359018.css.map": "/TechHubSpaces-Test/static/css/main.88359018.css.map",
+    "main.43e529e6.js.map": "/TechHubSpaces-Test/static/js/main.43e529e6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.88359018.css",
+    "static/js/main.43e529e6.js"
+  ]
+}
