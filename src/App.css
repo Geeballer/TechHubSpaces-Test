@@ -1,38 +1,87 @@
-.App {
-  text-align: center;
+:root{
+    --primaryColor: #1E1E1E;
+    --secondaryColor: #1463f7;
+    --lightSecondaryColor: #709ff8de;
+    --textColor: #fff;
+
+    --borderWidth: 1rem;
+    --shadowSpread: 5px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*, *::before, *::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+html{
+    font-size: 62.5%;
+}
+
+html::-webkit-scrollbar{
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track{
+    -webkit-box-shadow: inset 0 0 6px #3a5b5f;
+    border-radius: 1rem;
+}
+
+html::-webkit-scrollbar-thumb{
+    -webkit-box-shadow: inset 0 0 6px #ccd2eb;
+    border-radius: 1rem;
+}
+
+body{
+    background: var(--primaryColor);
+    width: 100%;
+    height: auto;
+    color: var(--textColor);
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2 > span{
+    color: var(--secondaryColor);
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover, a:active, a:visited{
+    color: none;
+}
+
+/**********************************************
+                    Preloader
+***********************************************/
+  
+  /* animations */
+  @keyframes curve1 {
+    to {
+      transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+    }
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  @keyframes curve2 {
+    to {
+      transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+    }
   }
-  to {
-    transform: rotate(360deg);
+  
+  @keyframes curve3 {
+    to {
+      transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+    }
   }
-}
+
+  /***************************************************
+                Toggle Button
+  ****************************************************/
+
+  .open{
+    transform: translateX(-100%);
+    background: transparent;
+    transition: all .45s ease-in;
+  }
+
