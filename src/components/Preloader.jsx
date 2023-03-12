@@ -1,8 +1,8 @@
-import { Container, Box, Typography } from '@mui/material'
+import { Box, Typography } from '@mui/material'
 
 const Preloader = () => {
   return (
-    <Container style={{height: '100vh', width: '100%', display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center'}}>
+    <Box style={{height: '100vh', width: '100%', background: '#00000e', display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center'}}>
         <Box style={{position:'relative', borderRadius:'50%', perspective:'50rem'}} sx={{width: {xs: '10rem', sm: '15rem'}, height: {xs: '10rem', sm: '15rem'}}}>
           <Box 
             style={{
@@ -44,7 +44,7 @@ const Preloader = () => {
         <Typography variant='h6' sx={{fontSize: {xs: '1.4rem', sm: '1.7rem'}, marginTop: '1rem', fontFamily: "'Montserrat', sans-serif"}}>
           All in one Web3 Dashboard.
         </Typography>
-    </Container>
+    </Box>
   )
 }
 
